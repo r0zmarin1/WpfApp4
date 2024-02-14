@@ -5,44 +5,46 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <Style x:Key="MainButton" TargetType="Button">
-            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontSize" Value="15"/>
             <Setter Property="FontFamily" Value="Segoe Black"/>
             <Setter Property="Padding" Value="5"/>
             <Setter Property="Background" Value="DarkSalmon"/>
-            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Margin" Value="20,10,0,10"/>
         </Style>
         <Style TargetType="Button">
-            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontSize" Value="15"/>
             <Setter Property="FontFamily" Value="Segoe Black"/>
             <Setter Property="Foreground" Value="DarkSalmon"/>
             <Setter Property="Padding" Value="5"/>
-            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Margin" Value="10"/>
         </Style>
         <Style TargetType="TextBox">
-            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="FontSize" Value="15"/>
             <Setter Property="FontFamily" Value="Segoe Black"/>
             <Setter Property="Padding" Value="5"/>
-            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Margin" Value="20,10,0,10"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
         </Style>
         <Style TargetType="Label">
-            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontSize" Value="25"/>
             <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="FontFamily" Value="Segoe Black"/>
-            <Setter Property="Padding" Value="5"/>
-            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Padding" Value="1"/>
+            <Setter Property="Margin" Value="1"/>
         </Style>
         <Style TargetType="RadioButton">
-            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontSize" Value="15"/>
             <Setter Property="FontFamily" Value="Segoe Black"/>
             <Setter Property="Foreground" Value="DarkSalmon"/>
             <Setter Property="Padding" Value="5"/>
-            <Setter Property="Margin" Value="2"/>
+            <Setter Property="Margin" Value="20,10,0,10"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
         </Style>
         <Style TargetType="CheckBox">
             <Setter Property="FontSize" Value="10"/>
             <Setter Property="FontFamily" Value="Segoe Black"/>
-            <Setter Property="Padding" Value="2"/>
-            <Setter Property="Margin" Value="20"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
         </Style>
     </Application.Resources>
 </Application>

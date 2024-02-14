@@ -27,11 +27,22 @@
         <Label Content="ФИО" Grid.Row="1"/>
         <Label Content="Возраст" Grid.Row="2"/>
         <Label Content="Образование" Grid.Row="3"/>
-        <CheckBox Content="Среднее полное" VerticalContentAlignment="Top" Grid.Row="3" Grid.Column="1"/>
-        <CheckBox Content="Среднее профессиональное" Grid.Row="3" Grid.Column="1"/>
+        <CheckBox Content="Среднее полное" VerticalAlignment="Top"  Grid.Row="3" Grid.Column="1"/>
+        <CheckBox Content="Среднее профессиональное" VerticalAlignment="Center"  Grid.Row="3" Grid.Column="1"/>
+        <CheckBox Content="Высшее" VerticalAlignment="Bottom" Grid.Row="3" Grid.Column="1"/>
         <Label Content="Опыт работы" Grid.Row="4"/>
-        <Label Content="Доп. информация" Grid.Row="5" Grid.ColumnSpan="2"/>
-        <RadioButton GroupName="Answers" Content="Да"/>
-        <RadioButton GroupName="Answers" Content="Нет"/>
+        <Label Grid.Row="5" Grid.ColumnSpan="2">
+            <TextBlock Text="Доп. информация" TextWrapping="Wrap" />
+        </Label>
+        <RadioButton GroupName="Answers" Content="Да" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right"/>
+        <RadioButton GroupName="Answers" Content="Нет" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left"/>
+        <Button Style="{StaticResource MainButton}" Content="Сохранить" Grid.Row="6" Grid.Column="1" Click="Save_Button"/>
+        <Button  Grid.Row="4" Grid.Column="3" Click="Button_Image" >
+            <TextBlock Text="Выбрать фото" TextWrapping="Wrap"/>
+        </Button>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding FIO}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Age}"/>
+        <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Info}"/>
+        <Image x:Name="imageControl" Width="150" Height="150" Grid.Row="1" Grid.RowSpan="3" Grid.Column="3" Source="{Binding Img}"/>
     </Grid>
 </Window>
